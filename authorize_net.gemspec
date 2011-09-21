@@ -7,16 +7,15 @@ Gem::Specification.new do |s|
   s.version     = AuthorizeNet::VERSION
   s.authors     = ['brianthecoder']
   s.email       = ['wbsmith83@gmail.com']
-  s.homepage    = ''
+  s.homepage    = 'http://authorize.net'
   s.summary     = %q{a fork of the gem to interface with authorize.net}
-  s.description = %q{a fork of the gem to interface with authorize.net}
+  s.description = %q{a fork of the gem to interface with authorize.net, minor fixes and tweaks, will go away once they changes are merged}
 
   s.rubyforge_project = 'authorize_net'
 
-  s.files         = `git ls-files`.split('\n')
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split('\n')
-  s.executables   = `git ls-files -- bin/*`.split('\n').map{ |f| File.basename(f) }
-  s.require_paths = ['lib']
+  s.files         = Dir['lib/**/*.rb'] + Dir['generators/**/*.rb']
+  s.test_files    = Dir['spec/**/*.rb']
+  s.require_paths = ['lib', 'generators']
   
   s.add_dependency('nokogiri', '>= 1.5.0')
 end
