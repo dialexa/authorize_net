@@ -10,7 +10,7 @@ module AuthorizeNet
         :ship_to_first_name => @first_name,
         :ship_to_last_name => @last_name,
         :ship_to_company => @company,
-        :ship_to_address => @street_address,
+        :ship_to_address => @address,
         :ship_to_city => @city,
         :ship_to_state => @state,
         :ship_to_zip => @zip,

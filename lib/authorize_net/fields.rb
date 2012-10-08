@@ -209,7 +209,7 @@ module AuthorizeNet
           {:firstName => :first_name},
           {:lastName => :last_name},
           {:company => :company},
-          {:address => :street_address},
+          {:address => :address},
           {:city => :city},
           {:state => :state},
           {:zip => :zip},
